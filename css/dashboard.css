@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans';
+	background: #ecf0f1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+div#header {
+	width: 100%;
+	height: 50px;
+	background-color: #8740a5;
+	margin: 0 auto;
+}
+
+.logo{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.logo a {
+	font-size: 1.3em;
+	color: #fff;
+}
+
+.logo a:hover{
+	text-decoration: none;
+}
+
+.logo a span {
+	font-weight: 300;
+}
+
+div#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.sidebar {
+	float: left;
+	width: 250px;
+	background-color: #2d1538;
+	padding-bottom: 465px;
+}
+
+nav {
+
+}
+
+nav ul{
+}
+
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	color: #ccc;
+	display: block;
+	padding: 10px;
+	font-size: 0.9em;
+	border-bottom: 1px solid #444;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+	padding-left: 20px;
+	background: #49215b;
+	color: #fff;
+}
+
+nav ul .active a{
+	background: #2980b9;
+	color: #ffffff;
+}
+
+
+.content {
+	width: auto;
+	height: 100%;
+	background-color: #ecf0f1;
+	margin-left: 250px;
+	padding: 15px;
+}
+
+.content p {
+	color: #424242;
+	fonnt-size: 0.8em;
+}
+
+div#box {
+	margin-top: 15px;
+}
+
+div#box .box-top {
+	color: #fff;
+	text-shadow: 0 1px #000;
+	background: #2980b9;
+	padding: 5px;
+	padding-left: 15px;
+	font-weight: 300;
+}
+
+div#box .box-panel {
+	padding: 15px;
+	background: #fff;
+	color: #333;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	a.mobile {
+		display: block;
+		color: #fff;
+		background-color: #2c1338;
+		text-align: center;
+		padding: 7px;
+		cursor: pointer;
+	}
+
+	a.mobile:active{
+		background: #474747;
+	}
+
+	.sidebar {
+		width: 100%;
+		height: 100%;
+		display: block;
+		padding-bottom: 0;
+	}
+
+	.content {
+		margin-left: 0;
+	}
+}
+
+
+
+@media only screen and (min-width: 480px) {
+
+	.sidebar {
+		height: 100%;
+		display: block;
+	}
+
+	a.mobile {
+		display: none;
+	}
+}
+
+
+.dropbtn {
+    background-color: #8740a5;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #2d1538;
+}
+
+/*user permissions style */
+.user-permissions {
+	color: $fff;
+	background-color: #8740a5;
+}
+
+/* dropdown - select css style */
+.select-style {
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.status-active {
+	background: #00e600;
+	padding: 3px;
+	color: #fff;
+	border: 1px solid #00e600;
+	border-radius: 3px;
+}
+
+.status-inactive {
+	background: #ff1a1a;
+	padding: 4px;
+	color: #fff;
+	border: 1px solid #ff1a1a;
+	border-radius: 3px;
+}

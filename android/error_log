@@ -1,0 +1,2 @@
+[05-Aug-2017 23:48:40 America/Denver] PHP Warning:  require_once(../classes/connection.php): failed to open stream: No such file or directory in /home1/bsitcaps/public_html/scienceworktext/android/getLessons.php on line 3
+[05-Aug-2017 23:48:40 America/Denver] PHP Fatal error:  require_once(): Failed opening required '../classes/connection.php' (include_path='.:/usr/php/56/usr/lib64:/usr/php/56/usr/share/pear') in /home1/bsitcaps/public_html/scienceworktext/android/getLessons.php on line 3
